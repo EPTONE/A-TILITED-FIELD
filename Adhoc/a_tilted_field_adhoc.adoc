@@ -1,0 +1,25 @@
+= A TILTED FIELD
+:doctype: book
+:author: Christopher James Ferguson
+:auth-email: fergusonchristopher363@gmail.com
+
+:sectnums!:
+:partnums:
+
+:!chapter-signifier:
+
+== DEDICATION 
+
+[dedication]
+I'd like to dedicate this book to William Spaniel for expanding my views
+on international relationships, internal relationships, and lines, as well
+as feral historian for introducing to a wide verity of books and ideas revolving
+around technology and the state, and how it effects man.
+
+Thank you.
+
+This is the rough draft of A TILTED FIELD, it is not intended to be
+the final piece of this book, and should not be treated as such.
+
+include::a_choice_that_doesnt_exist.adoc[]
+include::the_kindling_of_hate_encaged.adoc[]

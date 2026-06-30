@@ -1,0 +1,62 @@
+#extends: ~
+extends: base
+
+title-page-title:
+  font-family: CodeNewRoman
+  font-style: italic
+  font-size: 16
+
+base:
+  font-family: CodeNewRoman
+  font-style: normal
+  font-size: 14
+
+page:
+  initial-zoom: FitH
+  layout: portrait # <- page layout [landscape / portrait]
+  margin: [24mm. 15mm, 15mm, 15mm] # <- page margins [left, bottom, right, top]
+  size: B6 # <- page size.
+  
+  numbering:
+    start-at: body # <- determines the position in which to start the page count.
+
+heading:
+  font-family: CodeNewRoman
+  font-style: normal
+  font-size: 16
+
+  margin-page-top: 0.5in
+  text-align: center
+
+footer:
+  columns: <37% =38% >37%
+  recto:
+    right: 
+      content: '{chapter-title}'
+    center: &page_num
+      content: '{page-number} of {page-count}'
+  verso:
+    left: 
+      content: '{chapter-title}'
+    center: *page_num
+
+prose:
+  # paragraph configuration
+  
+  margin-inner: 0.05in # <- adjusts bottom of 
+  margin-bottom: 0.0in # <- does nothing from current observations.
+
+  text-indent: 0.35in # text indentation
+  text-indent-inner: 0.35in
+
+font:
+  catalog:
+    merge: false
+    CodeNewRoman:
+      normal: ./BookFonts/CodeNewRoman/CodeNewRomanNerdFont-Regular.otf
+      italic: ./BookFonts/CodeNewRoman/CodeNewRomanNerdFont-Italic.otf 
+      bold: ./BookFonts/CodeNewRoman/CodeNewRomanNerdFont-Bold.otf
+    CodeNewRomanMono:
+      normal: ./BookFonts/CodeNewRoman/CodeNewRomanNerdFontMono-Regular.otf
+      italic: ./BookFonts/CodeNewRoman/CodeNewRomanNerdFontMono-Italic.otf
+      bold: ./BookFonts/CodeNewRoman/CodeNewRomanNerdFontMono-Bold.otf
